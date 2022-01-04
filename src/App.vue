@@ -1,6 +1,18 @@
 <template>
-  <router-view/>
+  <nav-bar/>
+  <div class="contianer mt-3">
+    <router-view/>
+  </div>
 </template>
+<script>
+import NavBar from './components/NavBar.vue'
+export default {
+  components: { NavBar },
+  setup() {
+    
+  },
+}
+</script>
 
 <style>
 #app {
@@ -8,7 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #8aadcf;
 }
 
 #nav {
